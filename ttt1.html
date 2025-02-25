@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Part 1 - ttt1.html</title>
+        <style>
+            /* define grid class for board */
+            .grid {
+                display: grid; 
+                grid-template-columns: repeat(3, 100px); 
+                grid-template-rows: repeat(3, 100px); 
+                gap: 5px; 
+            }
+            
+            /* square class for styling each square */
+            .square {
+                width: 100px; 
+                height: 100px;
+                display: flex; 
+                align-items: center;
+                justify-content: center; 
+                font-size: 3em; 
+                border: 1px solid black; 
+                cursor: pointer; /* make cursor a pointer when hovering */
+            }
+
+            /* changes backgorunf color when hovering */
+            .square:hover {
+                background-color: pink; 
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Tic Tac Toe</h1> <!-- main title -->
+        <div class="grid">
+            <div class="square"></div>
+            <div class="square">X</div> <!--hard coding X's and O-->
+            <div class="square"></div>
+            <div class="square">X</div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square">O</div>
+            <div class="square"></div>
+        </div>
+    </body>
+</html>
